@@ -1,8 +1,8 @@
 {
     "name": "vscode-cdecl",
     "displayName": "vscode-cdecl",
-    "description": "",
-    "version": "0.0.1",
+    "description": "Convert C/C++ gibberish to English, and back again.",
+    "version": "1.0.0",
     "publisher": "kaelin",
     "engines": {
         "vscode": "^1.19.0"
@@ -11,12 +11,19 @@
         "Other"
     ],
     "activationEvents": [
+        "onCommand:cdecl.help",
         "onCommand:cdecl.explainSelected",
-        "onCommand:cdecl.explainTyped"
+        "onCommand:cdecl.explainTyped",
+        "onCommand:cdecl.declare",
+        "onCommand:cdecl.cast"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
+            {
+                "command": "cdecl.help",
+                "title": "cdecl: Help"
+            },
             {
                 "command": "cdecl.explainSelected",
                 "title": "cdecl: Explain selected text"
@@ -24,12 +31,20 @@
             {
                 "command": "cdecl.explainTyped",
                 "title": "cdecl: Explain typed text"
+            },
+            {
+                "command": "cdecl.declare",
+                "title": "cdecl: Declare"
+            },
+            {
+                "command": "cdecl.cast",
+                "title": "cdecl: Cast"
             }
         ]
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
-        "compile": "tsc -p ./",
+        "compile": "tsc -p ./ && node ./node_modules/marked/bin/marked ./assets/help.md -o ./assets/help.html",
         "watch": "tsc -watch -p ./",
         "postinstall": "node ./node_modules/vscode/bin/install",
         "test": "npm run compile && node ./node_modules/vscode/bin/test"
@@ -37,6 +52,7 @@
     "devDependencies": {
         "typescript": "^2.6.1",
         "vscode": "^1.1.6",
+        "marked": "^0.3.9",
         "@types/node": "^7.0.43",
         "@types/mocha": "^2.2.42"
     }

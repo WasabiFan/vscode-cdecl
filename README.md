@@ -2,15 +2,24 @@
 
 An extension to help you make sense of C gibberish, based off of the logic behind the excellent https://cdecl.org/.
 
+Bug reports/suggestions/feedback welcome!
+
 ## Features
 
-TODO
+- Explain a C/C++ declaration or cast in plain English
+- Generate a C/C++ declaration or cast _from_ plain English
+
+See [help.md](https://github.com/WasabiFan/vscode-cdecl/blob/master/assets/help.md) or run the `cdecl: Help` command to learn more.
+
+## Known issues
+
+- C++-specific syntax might not be handled correctly. See #1
 
 ## Release Notes
 
 ### 1.0.0
 
-Initial release. TODO
+Initial release.
 
 ## Hacking
 
