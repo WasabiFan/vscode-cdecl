@@ -13,7 +13,7 @@ See [help.md](https://github.com/WasabiFan/vscode-cdecl/blob/master/assets/help.
 
 ## Known issues
 
-- C++-specific syntax might not be handled correctly. See #1
+- C++-specific syntax might not be handled correctly. See [#1](https://github.com/WasabiFan/vscode-cdecl/issues/1)
 
 ## Release Notes
 
