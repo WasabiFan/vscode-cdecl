@@ -28,7 +28,7 @@ The following are declarations, but the same sytax is used for casts if "as" is 
 
 Note that some abbreviations can be used. These two are equivalent, for example:
 - `foo as function (x as pointer to char, y as int) returning pointer to int`
-- `x as func(w as ptr to char, y as int) ret ptr to int`
+- `foo as func(w as ptr to char, y as int) ret ptr to int`
 
 
 
