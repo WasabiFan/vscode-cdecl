@@ -1,4 +1,4 @@
-# vscode-cdecl
+# vscode-cdecl ![marketplace badge](https://vsmarketplacebadge.apphb.com/version/kaelin.vscode-cdecl.svg)
 
 An extension to help you make sense of C gibberish, based off of the logic behind the excellent https://cdecl.org/.
 
