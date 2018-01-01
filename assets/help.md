@@ -14,6 +14,8 @@ When running commands that ask for text input, examples are shown in the textbox
 
 ## English examples
 
+The following are declarations, but the same sytax is used for casts if "as" is replaced with "into".
+
 - `foo as int`
 - `foo as pointer to int`
 - `foo as array 6 of int`
@@ -21,6 +23,14 @@ When running commands that ask for text input, examples are shown in the textbox
 - `foo as const int`
 - `foo as pointer to const int`
 - `foo as const pointer to int`
+- `foo as function (x as pointer to char, y as int) returning pointer to int`
+
+
+Note that some abbreviations can be used. These two are equivalent, for example:
+- `foo as function (x as pointer to char, y as int) returning pointer to int`
+- `x as func(w as ptr to char, y as int) ret ptr to int`
+
+
 
 ## Full English syntax
 
