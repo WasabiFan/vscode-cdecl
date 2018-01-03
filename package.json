@@ -1,8 +1,14 @@
 {
     "name": "vscode-cdecl",
-    "displayName": "cdecl: C gibberish to English",
+    "displayName": "cdecl: C/C++ gibberish to English",
     "description": "Convert C/C++ gibberish to English, and back again.",
     "version": "1.0.0",
+    "keywords": [
+        "c++",
+        "c",
+        "cdecl",
+        "beginner"
+    ],
     "icon": "assets/icon.png",
     "publisher": "kaelin",
     "engines": {
@@ -47,6 +53,10 @@
         "type": "git",
         "url": "https://github.com/WasabiFan/vscode-cdecl"
     },
+    "bugs": {
+        "url": "https://github.com/WasabiFan/vscode-cdecl/issues"
+    },
+    "license": "MIT",
     "scripts": {
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./ && node ./node_modules/marked/bin/marked ./assets/help.md -o ./assets/help.html",
